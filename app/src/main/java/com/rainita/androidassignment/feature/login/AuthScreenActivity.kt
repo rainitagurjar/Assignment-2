@@ -21,11 +21,16 @@ class AuthScreenActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun listeners(){
         btSignIn.setOnClickListener(this)
+        btnSkip.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
         when(p0){
             btSignIn -> {
+                HomeScreenActivity.startActivity(this)
+            }
+
+            btnSkip -> {
                 HomeScreenActivity.startActivity(this)
             }
         }

@@ -5,6 +5,7 @@
     <string name="lbl_email">Email</string>
     <string name="lbl_password">PASSWORD</string>
     <string name="btn_sign_in">SIGN IN</string>
+    <string name="btn_skip">SKIP</string>
     <string name="btn_logout">LOG OUT</string>
 
     <!--Home Screen-->
