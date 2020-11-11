@@ -3,6 +3,7 @@
     package="com.rainita.androidassignment">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,21 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Assignment">
-
-        <activity android:name=".feature.login.AuthScreenActivity"/>
-
-        <activity android:name=".feature.SplashScreenActivity" >
-
+        <activity android:name=".feature.registration.RegistrationScreenActivity"></activity>
+        <activity android:name=".feature.login.AuthScreenActivity" />
+        <activity android:name=".feature.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".feature.home.HomeScreenActivity">
-
-        </activity>
+        <activity android:name=".feature.home.HomeScreenActivity"></activity>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import com.rainita.androidassignment.R
 import com.rainita.androidassignment.feature.home.HomeScreenActivity
+import com.rainita.androidassignment.feature.registration.RegistrationScreenActivity
 
 import kotlinx.android.synthetic.main.activity_auth_screen.*
 
@@ -21,12 +22,17 @@ class AuthScreenActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun listeners(){
         btSignIn.setOnClickListener(this)
+        btnSignUp.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
         when(p0){
             btSignIn -> {
                 HomeScreenActivity.startActivity(this)
+            }
+
+            btnSignUp -> {
+                RegistrationScreenActivity.startActivity(this)
             }
         }
     }
