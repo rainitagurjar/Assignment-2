@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.rainita.androidassignment.R
+import com.rainita.androidassignment.feature.forgotpassword.ForgotPasswordScreenActivity
 import com.rainita.androidassignment.feature.home.HomeScreenActivity
 import com.rainita.androidassignment.feature.registration.RegistrationScreenActivity
 
@@ -23,6 +24,8 @@ class AuthScreenActivity : AppCompatActivity(), View.OnClickListener {
     private fun listeners(){
         btSignIn.setOnClickListener(this)
         btnSignUp.setOnClickListener(this)
+        btnSkip.setOnClickListener(this)
+        tvForgotPassword.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
@@ -33,6 +36,13 @@ class AuthScreenActivity : AppCompatActivity(), View.OnClickListener {
 
             btnSignUp -> {
                 RegistrationScreenActivity.startActivity(this)
+
+            btnSkip -> {
+                HomeScreenActivity.startActivity(this)
+            }
+
+            tvForgotPassword -> {
+                ForgotPasswordScreenActivity.startActivity(this)
             }
         }
     }

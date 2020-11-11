@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Assignment">
         <activity android:name=".feature.registration.RegistrationScreenActivity"></activity>
+        <activity android:name=".feature.forgotpassword.ForgotPasswordScreenActivity"></activity>
         <activity android:name=".feature.login.AuthScreenActivity" />
         <activity android:name=".feature.SplashScreenActivity">
             <intent-filter>

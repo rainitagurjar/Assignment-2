@@ -9,7 +9,15 @@
     <string name="lbl_not_a_user_click_here">Not a user ? Click on SIGN UP here</string>
     <string name="lbl_i_am_a_user">Already a user ? Click on SIGN IN here</string>
     <string name="btn_sign_up">SIGN UP</string>
+    <string name="btn_skip">SKIP</string>
     <string name="btn_logout">LOG OUT</string>
+    <string name="btn_forgot_password">Forgot Password</string>
+
+    <!--Forgot password-->
+    <string name="lbl_forgot_password">FORGOT PASSWORD</string>
+    <string name="msg_password_reset">Password reset link will be sent to your registered email address</string>
+    <string name="btn_send">SEND</string>
+    <!--Forgot password-->
 
     <string name="lbl_first_name">FIRST NAME</string>
     <string name="lbl_last_name">LAST NAME</string>
@@ -36,6 +44,7 @@
     <!--Message-->
     <string name="default_internet_message">No internet connection</string>
     <string name="msg_do_you_want_to_logout">Do you want to logout ?</string>
+    <string name="msg_link_sent">Password reset link successfully sent.</string>
     <!--Message-->
 
 </resources>
