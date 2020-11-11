@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.rainita.androidassignment.R
+import com.rainita.androidassignment.feature.forgotpassword.ForgotPasswordScreenActivity
 import com.rainita.androidassignment.feature.home.HomeScreenActivity
 
 import kotlinx.android.synthetic.main.activity_auth_screen.*
@@ -21,12 +22,17 @@ class AuthScreenActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun listeners(){
         btSignIn.setOnClickListener(this)
+        tvForgotPassword.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
         when(p0){
             btSignIn -> {
                 HomeScreenActivity.startActivity(this)
+            }
+
+            tvForgotPassword -> {
+                ForgotPasswordScreenActivity.startActivity(this)
             }
         }
     }
