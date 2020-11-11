@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Android_Assignment</string>
+
+    <string name="lbl_login">LOGIN</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_password">PASSWORD</string>
+    <string name="btn_sign_in">SIGN IN</string>
+    <string name="btn_logout">LOG OUT</string>
+
+    <!--Home Screen-->
+    <string name="lbl_welcome">Welcome</string>
+    <string name="title_hey_user">Hey, User</string>
+
+
+    <!--Hint-->
+    <string name="hint_email">Enter email address</string>
+    <string name="hint_password">Enter Password</string>
+    <!--Hint-->
+
+    <!--Button Text-->
+    <string name="btn_yes">YES</string>
+    <string name="btn_no">NO</string>
+    <!--Button Text-->
+
+    <!--Message-->
+    <string name="default_internet_message">No internet connection</string>
+    <string name="msg_do_you_want_to_logout">Do you want to logout ?</string>
+    <!--Message-->
+
+</resources>
