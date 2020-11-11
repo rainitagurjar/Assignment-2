@@ -61,4 +61,8 @@ class HomeScreenActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
     }
+
+    override fun onBackPressed() {
+        finishAffinity()
+    }
 }

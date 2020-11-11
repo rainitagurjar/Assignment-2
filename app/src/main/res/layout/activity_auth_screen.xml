@@ -184,6 +184,19 @@
 
             </androidx.cardview.widget.CardView>
 
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_marginStart="@dimen/dimen_50dp"
+                android:layout_marginEnd="@dimen/dimen_40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorMaroon"
+                android:layout_gravity="center"
+
+                android:textSize="@dimen/dimen_20sp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:text="@string/btn_forgot_password" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -206,18 +219,7 @@
                 android:text="@string/btn_skip" />
 
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvForgotPassword"
-                android:layout_marginStart="@dimen/dimen_40dp"
-                android:layout_marginEnd="@dimen/dimen_40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/textColorMaroon"
-                android:layout_gravity="center"
 
-                android:textSize="@dimen/dimen_20sp"
-                android:layout_marginTop="@dimen/dimen_20dp"
-                android:text="@string/btn_forgot_password" />
 
 
         </LinearLayout>

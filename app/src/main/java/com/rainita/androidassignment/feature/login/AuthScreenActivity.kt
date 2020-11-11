@@ -36,6 +36,7 @@ class AuthScreenActivity : AppCompatActivity(), View.OnClickListener {
                 val error = checkFields()
                 if (TextUtils.isEmpty(error)) {
                     HomeScreenActivity.startActivity(this)
+                    finishAffinity()
                 } else{
                     Toast.makeText(this,error,Toast.LENGTH_LONG).show()
                 }
@@ -47,6 +48,7 @@ class AuthScreenActivity : AppCompatActivity(), View.OnClickListener {
 
             btnSkip -> {
                 HomeScreenActivity.startActivity(this)
+                finishAffinity()
             }
 
             tvForgotPassword -> {

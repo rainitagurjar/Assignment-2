@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/lbl_welcome"
-        android:textColor="@color/textColorBlack"
+        android:textColor="@color/textColorYellow"
         android:textSize="@dimen/dimen_18sp"
         android:layout_marginTop="@dimen/dimen_30dp"
         android:layout_marginBottom="@dimen/dimen_30dp"/>
