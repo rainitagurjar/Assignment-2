@@ -7,6 +7,13 @@
     <string name="btn_sign_in">SIGN IN</string>
     <string name="btn_skip">SKIP</string>
     <string name="btn_logout">LOG OUT</string>
+    <string name="btn_forgot_password">Forgot Password</string>
+
+    <!--Forgot password-->
+    <string name="lbl_forgot_password">FORGOT PASSWORD</string>
+    <string name="msg_password_reset">Password reset link will be sent to your registered email address</string>
+    <string name="btn_send">SEND</string>
+    <!--Forgot password-->
 
     <!--Home Screen-->
     <string name="lbl_welcome">Welcome</string>
@@ -26,6 +33,7 @@
     <!--Message-->
     <string name="default_internet_message">No internet connection</string>
     <string name="msg_do_you_want_to_logout">Do you want to logout ?</string>
+    <string name="msg_link_sent">Password reset link successfully sent.</string>
     <!--Message-->
 
 </resources>
