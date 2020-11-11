@@ -157,8 +157,31 @@
 
             </androidx.cardview.widget.CardView>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSkip"
+                android:layout_marginBottom="@dimen/dimen_30dp"
+                android:layout_marginStart="@dimen/dimen_40dp"
+                android:layout_marginEnd="@dimen/dimen_40dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_35dp"
+                android:textColor="@color/textColorWhite"
+                android:layout_gravity="center"
+
+
+                android:textSize="@dimen/dimen_12sp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@color/colorBgLightGreen"
+                android:text="@string/btn_skip" />
 
         </LinearLayout>
+
+
+
 
 
     </androidx.core.widget.NestedScrollView>
