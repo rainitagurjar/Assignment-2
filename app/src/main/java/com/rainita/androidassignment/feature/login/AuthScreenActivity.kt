@@ -21,7 +21,7 @@ class AuthScreenActivity : AppCompatActivity(), View.OnClickListener {
         listeners()
     }
 
-    private fun listeners(){
+    private fun listeners() {
         btSignIn.setOnClickListener(this)
         btnSignUp.setOnClickListener(this)
         btnSkip.setOnClickListener(this)
@@ -29,13 +29,14 @@ class AuthScreenActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(p0: View?) {
-        when(p0){
+        when (p0) {
             btSignIn -> {
                 HomeScreenActivity.startActivity(this)
             }
 
             btnSignUp -> {
                 RegistrationScreenActivity.startActivity(this)
+            }
 
             btnSkip -> {
                 HomeScreenActivity.startActivity(this)
@@ -47,11 +48,13 @@ class AuthScreenActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    companion object{
-        fun startActivity(context : Context){
+    companion object {
+        fun startActivity(context: Context) {
             context.startActivity(
-                Intent(context,
-                    AuthScreenActivity::class.java)
+                Intent(
+                    context,
+                    AuthScreenActivity::class.java
+                )
             )
         }
     }
