@@ -213,5 +213,15 @@ object CommonUtils {
         return matcher.matches()
     }
 
+    @VisibleForTesting
+    fun isValidPhoneNumberLength(editText: String): Boolean {
+        return editText.length >= 10
+    }
+
+    @VisibleForTesting
+    fun isNameContainsAdmin(name: String): Boolean {
+        return name == "Admin" || name == "admin"
+    }
+
 
 }
