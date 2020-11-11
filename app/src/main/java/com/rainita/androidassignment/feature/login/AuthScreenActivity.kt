@@ -4,7 +4,9 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.View
+import android.widget.Toast
 import com.rainita.androidassignment.R
 import com.rainita.androidassignment.feature.forgotpassword.ForgotPasswordScreenActivity
 import com.rainita.androidassignment.feature.home.HomeScreenActivity
@@ -31,7 +33,12 @@ class AuthScreenActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when (p0) {
             btSignIn -> {
-                HomeScreenActivity.startActivity(this)
+                val error = checkFields()
+                if (TextUtils.isEmpty(error)) {
+                    HomeScreenActivity.startActivity(this)
+                } else{
+                    Toast.makeText(this,error,Toast.LENGTH_LONG).show()
+                }
             }
 
             btnSignUp -> {
@@ -46,6 +53,18 @@ class AuthScreenActivity : AppCompatActivity(), View.OnClickListener {
                 ForgotPasswordScreenActivity.startActivity(this)
             }
         }
+    }
+
+    private fun checkFields() = when {
+        TextUtils.isEmpty(etEmail.text?.trim()) -> {
+            etEmail.requestFocus()
+            getString(R.string.error_email_address_or_mobile)
+        }
+        TextUtils.isEmpty(etPassword.text?.trim()) -> {
+            etPassword.requestFocus()
+            getString(R.string.error_password)
+        }
+        else -> null
     }
 
     companion object {

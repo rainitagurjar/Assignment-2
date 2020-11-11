@@ -47,4 +47,15 @@
     <string name="msg_link_sent">Password reset link successfully sent.</string>
     <!--Message-->
 
+    <!--  Validation Messages -->
+    <string name="error_email_or_mobile">Please enter email address or mobile number</string>
+    <string name="error_first_name">Please enter first name</string>
+    <string name="error_last_name">Please enter last name</string>
+    <string name="error_email_address">Please enter email address</string>
+    <string name="error_email_address_or_mobile">Please enter email address or mobile number</string>
+    <string name="error_invalid_email_address">Please enter valid email address</string>
+    <string name="error_mobile_number">Please enter mobile number</string>
+    <string name="error_password">Please enter password</string>
+    <string name="error_invalid_password">Please enter password at least 6 characters</string>
+
 </resources>
