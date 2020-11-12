@@ -1,7 +1,34 @@
 Assignment-2
 Subject Code : DOT503 - DevOps Tools
 
-IDE used to deploy and execute this application
+The Build Script
+
+The Android build system compiles app resources and source code, and packages them into APKs that
+you can test, deploy, sign, and distribute the app. Android Studio uses Gradle which is an advanced
+build toolkit, to automate and manage the build process, while allowing flexible custom build configurations.
+
+In Android studio, the build script is inside the build.gradle file. This file is located inside
+root project directory. By default, the buildscript block has been used by project level build files
+to define the Gradle repository and all dependencies which are commonly use in all module.
+
+Build and deploy a debug APK of Android Application
+1.	To build and execute all the tasks of project using the Gradle wrapper command line tool.
+    For Windows, batch file (gradlew.bat) will be use and for Linux and Mac system
+    shell script (gradle.sh) file will be use.
+
+2.	Open Command line and navigate to the root project directory.
+    To make a debug build, follow the below command
+    gradlew assembleDebug
+
+    This creates an APK file name as your modul_name-debug.apk under project_name/module_name/build/outputs/apk/:
+    For example, this project will create as "app-debug.apk”
+
+3.	Now the file is ready to install in android device.
+    To install the APK file in connected android device or running emulator.
+    gradlew installDebug
+
+
+IDE also used to deploy and execute this application
 * Android Studio 4.1
 link :- https://developer.android.com/studio
 
