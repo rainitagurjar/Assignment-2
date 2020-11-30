@@ -30,7 +30,7 @@ class MyUnitTest {
 
     @Test
     fun testEmailValidityPartTwo() {
-        val testEmail = "   anupamchugh@gmail.com  "
+        val testEmail = "anupamchugh@gmail.com"
         Assert.assertThat(
             String.format(
                 "Email Validity Test failed for %s ",
@@ -52,7 +52,7 @@ class MyUnitTest {
 
     @Test
     fun testMobileNumberLength() {
-        val testMobile = "954821544"
+        val testMobile = "9548215441"
         Assert.assertThat(
             String.format(
                 "Mobile Number Length Test failed for %s ",
