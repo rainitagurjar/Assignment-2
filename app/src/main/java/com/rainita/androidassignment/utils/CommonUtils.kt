@@ -116,15 +116,15 @@ object CommonUtils {
 
 
     //--- get IMEI number of Device
-    @RequiresPermission(Manifest.permission.READ_PHONE_STATE)
-    fun getIMEINumber(mContext: Context): String? {
-        val telephonyManager = mContext.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
-        return if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
-
-            null
-        } else telephonyManager.deviceId.toString()
-
-    }
+//    @RequiresPermission(Manifest.permission.READ_PHONE_STATE)
+//    fun getIMEINumber(mContext: Context): String? {
+//        val telephonyManager = mContext.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
+//        return if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
+//
+//            null
+//        } else telephonyManager.deviceId.toString()
+//
+//    }
 
     //--- get ip address of mobile
     val ipAddress: String?
