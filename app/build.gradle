@@ -5,6 +5,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        releaseConfig {
+            storePassword 'assignmentProj'
+            keyAlias 'assignmentProj'
+            keyPassword 'assignmentProj'
+            storeFile file('../projectData/AssignmentProj.jks')
+        }
+    }
     compileSdkVersion 29
 
     defaultConfig {
